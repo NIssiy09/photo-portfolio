@@ -1,0 +1,638 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collaps
+}
+
+html{
+  font-size: 16px;
+}
+
+.start {
+	background:whitesmoke;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+
+.main-window{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("main-img/325C7B3A-CA80-439B-86B3-77D9770BE3A0-2008-0000012C09A04310 2.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  margin: 0%;
+  position: relative;
+  margin-bottom:5vh ;
+}
+
+.head{
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+
+
+
+h1{
+  font-size: 3.7rem;
+  font-family: "Kokoro";   letter-spacing: -0.12em;
+  color: #4E4E4E;
+  opacity: 0.9;
+  display: none;
+}
+
+.list-container{
+  position: absolute;
+  top: 17rem;
+  width: 100vw;
+  display: none;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list{
+width: 25%;
+text-align: center;
+padding-bottom: 2.0rem;
+padding-top: 2.0rem;
+cursor: pointer;
+}
+
+.list:hover{
+  opacity: 0.4;
+}
+
+.list li{
+  font-size: 1.3rem;;
+  color: #4E4E4E;
+  font-family: 'Julius Sans One', sans-serif;  letter-spacing: 0.1em;
+}
+
+.list i{
+  margin-right: 1.4rem;
+}
+
+.gallery{
+  width: 100vw;
+  height: auto;
+  background-image: url("main-img/2020-10-25_16-51-18_000mono.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 5vh;
+}
+  
+
+h2{
+  padding-bottom:3rem;
+  padding-top: 3rem;
+  font-size: 1.8rem;;
+  color: #4E4E4E;
+  font-family: 'Julius Sans One', sans-serif;  letter-spacing: 0.1em;
+  width: 100vw;
+  text-align: center;
+}
+
+.header1{
+  background-color:rgba(171,33,23,0.5);
+  opacity: 0;
+  transform : translate(-300px, 0px);
+  transition : all 1500ms;
+}
+.header1.scrollIn{
+  opacity: 1;
+  transform: translate(0, 0px); 
+}
+
+.header2{
+  background-color:rgba(64,104,162,0.55);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  transform : translate(-300px, 0px);
+  transition : all 1500ms;
+  
+}
+.header2.scrollIn{
+  opacity: 1;
+  transform: translate(0, 0px); 
+}
+
+.header3{
+  background-color:rgba(221,184,170,0.65);
+  opacity: 0;
+  transform : translate(-300px, 0px);
+  transition : all 1500ms;
+}
+.header3.scrollIn{
+  opacity: 1;
+  transform: translate(0, 0px); 
+}
+
+.header4{
+  background-color:rgba(171,33,23,0.5);
+  opacity: 0;
+  transform : translate(-300px, 0px);
+  transition : all 1500ms;
+}
+.header4.scrollIn{
+  opacity: 1;
+  transform: translate(0, 0px); 
+}
+
+
+
+.slider{
+  margin: 2rem auto;
+  width: 55%;
+  box-shadow: 2px 2px 10px black;
+
+
+  opacity: 0;
+  transform : translate(0, 30px);
+  transition : all 1500ms;
+}
+.slider.scrollIn{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.slider img{
+  width: 100%;
+  height: auto;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+  color:whitesmoke;
+}
+
+.slick-dots{
+  font-size: 2rem;
+}
+
+.slick-prev:before{
+  position: absolute;
+  top: auto;
+  left: 10%;
+}
+
+.link-box{
+  display: block;
+  text-align: right;
+  position: relative;
+  right: 22%;
+  padding-bottom: 1.5rem;
+}
+
+.link-box a:hover{
+  opacity: 0.6;
+  
+}
+
+.link-box a:not(i){
+  text-decoration: none;
+}
+
+.link-box a{
+  font-size: 1.5rem;
+  color:whitesmoke;
+  font-family: 'Julius Sans One', sans-serif;  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+.profile{
+  width: 100vw;
+  height: auto;
+  position: relative;
+  margin-bottom: 5vh;
+}
+
+.prof-box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 100%;
+  padding-left: 5%;
+}
+.prof-photo-container{
+  width: 30%;
+  background-color:rgba(111, 158, 197, 0.3);
+  margin-top: 7.8rem;
+  margin-bottom: 7rem;
+}
+.photo-box{
+  position: relative;
+  top: 3.5rem;
+  left: 20%;
+  width: 100%;
+  opacity: 0;
+  transform : translate(0, 0px);
+  transition : all 1500ms; 
+}
+.photo-box.scrollIn{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.photo-box img{
+  width: 90%;
+  height: auto;
+}
+.prof-text-container{
+  width: 60%;
+}
+
+.prof-text-box{
+  position: relative;
+  top: 30%;
+  left: 25%;
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+.prof-text-box.scrollIn{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+h3{
+  font-size: 3.3rem;
+  font-family: 'Julius Sans One', sans-serif;  letter-spacing: 0.1em;
+  margin-bottom: 1.0rem;
+  color: #4E4E4E;
+}
+.info{
+  font-size: 1.1rem;
+  font-family: "Sawarabi Gothic";
+  margin-bottom: 1.3rem;
+  color: #4E4E4E;
+}
+.birthday{
+  font-family: 'Julius Sans One', sans-serif;  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  margin-bottom: 5.5rem;
+
+}
+.birthday span{
+  margin-right:1rem ;
+}
+
+.contact{
+  width: 100vw;
+  height: auto;
+  position: relative;
+  margin-bottom: 5vh;
+}
+
+.background{
+  position: relative;
+  background-image: url("main-img/P1010178.JPG");
+  width: 100vw;
+  height: auto;
+  padding-bottom: 3rem;
+}
+
+.service-container{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+
+
+.flex-box{
+  width: 30%;
+  border-radius: 1.3rem;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.service-item{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  transform: translate(0,50px);
+  transition: all 1500ms;
+}
+
+.service-item.scrollIn{
+  opacity: 1;
+  transform:translate(0,0px);
+} 
+
+
+h4{
+  font-size: 1.8rem;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Sawarabi Gothic";
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+  border-bottom: 0.09rem solid;
+  color: #4E4E4E;
+
+
+
+}
+.service-item p{
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-family: "Sawarabi Gothic";
+  color: #4E4E4E;
+  margin-bottom: 1.5rem;
+}
+
+.service-item img{
+  margin-top: 2.5rem;
+  width: 60%;
+  margin-bottom: 2.5rem;
+  border-radius: 50%;
+
+}
+
+.sns{
+  width: 100vw;
+  height: auto;
+  background-image: url();
+  background-size: cover;
+}
+
+.jump{
+  text-align: right;
+  font-size: 2.5rem;
+  position: fixed;
+  right: 10%;
+  bottom: 7%;
+  color: #4E4E4E;
+  opacity: 0.7;
+}
+.jump i:hover{
+  opacity: 1.0;
+  cursor: pointer;
+}
+
+
+.sns-container{
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;	
+  width: 90%;  
+  margin: 0 auto;
+  align-items: center;
+}
+
+.sns-container li{
+  width: 30%;
+}
+
+.message{
+  text-align: center;
+  padding: 5rem 1.5rem 5rem 1.5rem;
+  border-radius: 15%;
+  box-shadow:0 0 0.3rem gray;
+}
+.message p{
+  font-size: 1.5rem;
+  color: #4E4E4E;
+  margin-bottom: 1.5rem;
+  font-family: "Sawarabi Gothic";
+  text-align: center;
+}
+.message i{
+  font-size: 3rem;
+  color:whitesmoke;
+  margin-top: 3.5rem;
+  padding: 2rem;
+  background-color: #4E4E4E;
+  border-radius: 20%;
+}
+.message i:hover{
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.mail-modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(78, 78, 78, 0.6);
+}
+.mail-modal.on{
+  display: block;
+}
+
+.mail-form{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 60%;
+  color: whitesmoke;
+}
+
+.mail-form span{
+  font-size: 3rem;
+}
+.mail-form span:hover{
+  cursor: pointer;
+}
+.close-button{
+  text-align: right;
+  margin-bottom: 2rem;
+}
+.form{
+  font-size: 1.8rem;
+  font-family: "Sawarabi Gothic";
+
+}
+.mail-form label{
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.mail-form input:not(.text,.soshin){
+  display: block;
+  float: left;
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 3rem;
+}
+.text{
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.soshin-button{
+  text-align: right;
+}
+.soshin{
+  width: 20%;
+  height: 2.5rem;
+}
+
+
+@media screen and (max-width: 959px) {
+  /* 959px以下に適用されるCSS（タブレット用） */
+  html{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+    html{
+      font-size: 10px;
+    }
+    .main-window{
+      background-image: url("main-img/Snapseed 4.jpg");
+    }
+    .head{
+      margin-top: 5rem;
+    }
+    h1{
+      margin-bottom: 8rem;
+    }
+   
+
+    .list{
+      width: 50%;
+    }
+    
+    .prof-box{
+      width: 100%;
+      padding-left: 0;
+      margin: 0 auto;
+    }
+    .photo-box{
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .prof-photo-container{
+      width: 100%;
+      margin-bottom: 3rem;
+      }
+    
+    .photo-box img{
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .prof-text-container{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+    .prof-text-box{
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+
+    }
+    .birthday{
+      margin-bottom: 3rem;
+
+    }
+    .flex-box{
+      width: 100%;
+    }
+    .service-item{
+      margin-bottom: 3rem;
+    }
+
+    .sns-container{
+      width: 100%;
+    }
+    .sns-container li{
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+    .message{
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .soshin{
+      width: 50%;
+    }
+
+   
+    
+    
+}
+	/* 480px以下に適用されるCSS（スマホ用） */
