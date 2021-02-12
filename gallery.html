@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="start"></div>
+
+    <h1>GALLERY</h1>
+    <div class="wrapper">
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+            <div class="grid-item w2"><img src="mosaic-img/2020-09-12_09-29-44_000.jpeg" alt="img1"></div>
+            <div class="grid-item"><img src="mosaic-img/2020-09-12_17-10-15_000 (2020-09-13T15_40_18.453).jpeg" alt="img2"></div>
+            <div class="grid-item"><img src="mosaic-img/2020-09-12_17-10-52_000 (2020-09-13T15_40_17.967).jpeg" alt="img4"></div>
+            <div class="grid-item w2s"><img src="mosaic-img/2020-09-15_14-59-48_000 (2020-12-12T17_54_59.823).jpeg" alt="img5"></div>
+            <div class="grid-item"><img src="mosaic-img/2020-09-15_15-05-57_000 (2020-09-15T14_42_35.820).jpeg" alt="img6"></div>
+            <div class="grid-item w2"><img src="mosaic-img/2020-09-27_17-28-40_000.jpeg" alt="img7"></div>
+            <div class="grid-item"><img src="mosaic-img/2020-10-03_18-08-57_000.jpeg" alt="img8"></div>
+            <div class="grid-item"><img src="mosaic-img/2020-10-03_18-18-10_000.jpeg" alt="img9"></div>
+            <div class="grid-item"><img src="mosaic-img/2020-10-03_18-28-53_000.jpeg" alt="img10"></div>
+            <div class="grid-item w2"><img src="mosaic-img/2020-12-12_17-54-41_000.jpeg" alt="img14"></div>
+            <div class="grid-item w2"><img src="mosaic-img/2020-12-12_18-43-46_000.jpeg" alt="img15"></div>
+            <div class="grid-item "><img src="mosaic-img/2020-12-12_18-56-44_000.jpeg" alt="img16"></div>
+            <div class="grid-item"><img src="mosaic-img/2020-10-25_16-12-32_000.jpeg" alt="img11"></div>
+            <div class="grid-item w2"><img src="mosaic-img/2020-10-25_16-51-18_000.jpeg" alt="img13"></div>
+            <div class="grid-item"><img src="mosaic-img/2020-10-25_16-37-32_000.jpeg" alt="img12"></div>
+            <div class="grid-item w2"><img src="mosaic-img/DSC00850.jpg" alt="img17"></div>
+            <div class="grid-item w2"><img src="mosaic-img/DSC00851.jpg" alt="img18"></div>
+            <div class="grid-item"><img src="mosaic-img/DSC00891.jpg" alt="img19"></div>
+            <div class="grid-item"><img src="mosaic-img/DSC00911.jpg" alt="img20"></div>
+            <div class="grid-item w2"><img src="mosaic-img/DSC00921.jpg" alt="img21"></div>
+            <div class="grid-item"><img src="mosaic-img/DSC01138.jpg" alt="img22"></div>
+            <div class="grid-item"><img src="mosaic-img/DSC01388.jpeg" alt="img22"></div>
+            <div class="grid-item"><img src="mosaic-img/DSC01411.jpeg" alt="img22"></div>
+            <div class="grid-item"><img src="mosaic-img/DSC01445.jpeg" alt="img22"></div>
+            <div class="grid-item w2"><img src="mosaic-img/DSC01453.jpeg" alt="img22"></div>
+            <div class="grid-item"><img src="mosaic-img/DSC01455.jpeg" alt="img22"></div>
+            <div class="grid-item w2"><img src="mosaic-img/DSC01458.jpeg" alt="img22"></div>
+
+        </div>
+    </div>
+
+    <div class="popup-container" id="popup">
+        <div class="popup-modal">
+            <div><span class="fas fa-times"  id="close"></span></div>
+            <img  id="popup-img" src="" alt="PopUp">
+        </div>
+    </div>
+  
+      
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
